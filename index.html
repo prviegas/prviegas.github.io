@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <title>Pedro Viegas</title>
 </head>
 
 <body>
@@ -12,105 +14,114 @@
     <div id="header">
         <div class="container d-flex flex-direction-row justify-content-end">
             <div class="ml-4">
-                <a class="active" href="#">
+                <a class="active header-button header-guide" href="#projects" onclick=scrollTo()>
                     <span lang="en">Projects</span>
                     <span lang="pt">Projetos</span>
                 </a>
             </div>
             <div class="ml-4">
-                <a href="#">
+                <a class="header-button header-guide" href="#experience">
                     <span lang="en">Experiences</span>
                     <span lang="pt">Experiências</span>
                 </a>
             </div>
             <div class="ml-4">
-                <a href="#">
+                <a class="header-button header-guide" href="#tech">
                     <span lang="en">Technologies</span>
                     <span lang="pt">Tecnologias</span>
                 </a>
             </div>
             <div class="ml-4">
-                <a href="#">
+                <a class="header-button header-guide" href="#contact">
                     <span lang="en">Contact</span>
                     <span lang="pt">Contato</span>
                 </a>
             </div>
             <div class="ml-4">
-                <a href="#">
+                <a class="header-button" id="resume-header" href="curriculos/resume.pdf" target="_blank">
                     <span lang="en">Resume</span>
                     <span lang="pt">Currículo</span>
                 </a>
             </div>
-            <button class="ml-4 switch-btn" lang="en"><div class="mr-1 br-flag flag-icon"></div> Português</button>
-            <button class="ml-4 switch-btn" lang="pt"><div class="mr-1 en-flag flag-icon"></div> English</button>
+            <button class="ml-4 switch-btn" lang="en">
+                <div class="mr-1 br-flag flag-icon"></div> Português
+            </button>
+            <button class="ml-4 switch-btn" lang="pt">
+                <div class="mr-1 en-flag flag-icon"></div> English
+            </button>
         </div>
     </div>
-    <div class="text-white d-flex justify-content-center align-items-center" id="hero">
-        <div class="bg-img"></div>
+    <div class="text-white d-flex align-items-center" id="hero">
+        <div class="container">
+            <div class="bg-img"></div>
+            <div class="hero-text">
+                <h2 class="pink-text font-weight-lighter" lang="en">hey, I'm</h2>
+                <h2 class="pink-text font-weight-lighter" lang="pt">olá, eu sou</h2>
+                <h1 class="display-2 my-name"><span class="font-weight-bold">Pedro</span> Viegas</h1>
 
-        <div class="text-center hero-text">
-            <h1 class="display-2">Pedro dos Reis Viegas</h1>
-
-            <h3 class="font-weight-lighter" lang="en">Mobile and Web Front-end Developer</h3>
-            <h3 class="font-weight-lighter" lang="pt">Desenvolvedor Front-end Mobile e Web</h3>
+                <h3 class="font-weight-lighter" lang="en">Mobile and Web Front-end Developer</h3>
+                <h3 class="font-weight-lighter" lang="pt">Desenvolvedor Front-end Mobile e Web</h3>
+            </div>
         </div>
     </div>
 
-    <section id="projects">
+    <section class="container" id="projects">
         <div class="pt-4">
-            <h2 class="text-center title-with-detail" lang="en">
+            <h2 class="title-with-detail text-center h1" lang="en">
                 Projects
             </h2>
-            <h2 class="text-center title-with-detail" lang="pt">
+            <h2 class="title-with-detail text-center h1" lang="pt">
                 Projetos
             </h2>
         </div>
     </section>
 
-    <section id="experience">
+    <section class="container" id="experience">
         <div class="pt-4">
-            <h2 class="text-center title-with-detail" lang="en">
+            <h2 class="title-with-detail text-center h1" lang="en">
                 Experiences
             </h2>
-            <h2 class="text-center title-with-detail" lang="pt">
+            <h2 class="title-with-detail text-center h1" lang="pt">
                 Experiências
             </h2>
         </div>
     </section>
 
-    <section id="tech">
+    <section class="container" id="tech">
         <div class="pt-4">
-            <h2 class="text-center title-with-detail" lang="en">
+            <h2 class="title-with-detail text-center h1" lang="en">
                 Technologies
             </h2>
-            <h2 class="text-center title-with-detail" lang="pt">
+            <h2 class="title-with-detail text-center h1" lang="pt">
                 Tecnologias
             </h2>
         </div>
     </section>
 
-    <section id="contact">
+    <section class="container mb-5" id="contact">
         <div class="pt-4">
-            <h2 class="text-center title-with-detail" lang="en">
+            <h2 class="title-with-detail text-center h1" lang="en">
                 Contact
             </h2>
-            <h2 class="text-center title-with-detail" lang="pt">
+            <h2 class="title-with-detail text-center h1" lang="pt">
                 Contato
             </h2>
+
+            <div class="d-flex justify-content-around contact-box-container">
+                <div class="contact-box col-8 col-sm-4">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <p>Whatsapp</p>
+                    <span>+55 (51) 9 9784-6121</span>
+                </div>
+                <div class="contact-box col-8 col-sm-4">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <p lang="en">Mail</p>
+                    <p lang="pt">E-mail</p>
+                    <span>prvieg@gmail.com</span>
+                </div>
+            </div>
         </div>
     </section>
-
-    <section id="resume">
-        <div class="pt-4">
-            <h2 class="text-center title-with-detail" lang="en">
-                Resume
-            </h2>
-            <h2 class="text-center title-with-detail" lang="pt">
-                Currículo
-            </h2>
-        </div>
-    </section>
-
 
     <!-- Bundled File -->
     <script src="./bundle.js"></script>
@@ -129,6 +140,15 @@
                 menu.removeClass('active');
                 $(el).addClass('active');
             };
+
+            $('.header-guide').click(function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                },
+                    'slow');
+
+            });
 
             var menu = $('#header a');
             var sectionPositions = $('section').map(function () {
